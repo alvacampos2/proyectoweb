@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{ /*barrade busqueda*/
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; /*elimina subrallado*/
+    color: rgb(0, 0, 0); 
+    font-size: 20px;
+}
+header{
+    width: 100%;
+     /*barra roja sirve para que se siga o no mostrando o fixed*/ 
+    top: 0;
+    left: 0;
+    background: rgb(218, 4, 4);
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    z-index: 100; /*para que el navbar quede siempre mostrando*/
+}
+
+
+/*header superior*/
+.header__superior{
+
+    max-width: 2000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /*agranda o achica el color rojo de arriba*/
+    
+}
+
+.logo img{
+    width: 100px;
+    /*padding: ;  sirve para achicar el logo*/
+    
+}
+.search input{
+    width: 300px;
+    padding: 10px;
+
+}
+
+/*BARRA MENU9*/
+.container__menu{
+    width: 100%;
+    height: 50px; /*alto o bajo de imagen negra*/
+    background: #1D1C1C;
+    padding: 0px 20px; /*PARA HACER RESPONSIVE EL TEXTO YSE ADAPTE A LA PAGINA*/
+}
+
+.menu{
+    max-width: 2200px; /* para mover los iconos hacia el lado en barra negra*/
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex; /*PARA Q LAS OPCIONSDE LA BARRA SE VAYAN HACIA EL LADO*/
+}
+
+nav > ul > li{
+    height: 100%;
+    list-style: none; /*ELINA LOS PUNTOS DE TEXTO*/
+   
+    
+}
+
+nav > ul > li > a{
+    width: 100%; /*abarca lo que alumbra*/
+    height: 100%;
+    display: flex; /*POSICIONA LAS OPCIONES DE LA BARRA EN EL MEDIO*/
+    align-items: center;/*POSICIONA LAS OPCIONES DE LA BARRA EN EL MEDIO*/
+    padding: 25px; /*DAEL ESPACIO ENTRE LAS OPCIONES DE LA BARRA*/
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: all 300ms ease;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; /*TEXTO DE LA BARRA*/
+    
+}
+nav > ul > li > a:hover{
+    transform: scale(1.1); /*EFECTO DE LAS OPCIONES DE LA BARRA QUE CREZCA*/
+    background: #fa160e; /*COLOR DELEFECTO*/
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /*EFECTODE SOMBRA*/
+
+}
+
+
+
+/*diseño pagina de registro*/
+
+body{
+    background: #020410;
+}
+
+.headerr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12.5%;
+    background: #44582e;    /*color barra navbar*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.navbarr a {
+    position: relative;
+    font-size: 16px;
+    color: #e4e4e4 ;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.navbarr a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #e4e4e4;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.navbarr a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.search-bar{
+    width: 250px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #e4e4e4;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #e4e4e4;
+    padding-left: 10px;
+}
+.search-bar input::placeholder {
+    color: #e4e4e4;
+}
+
+.search-bar button {
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.search-bar button i{
+    font-size: 22px;
+    color: #e4e4e4;
+
+}
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    background: url(mudo.jpg) no-repeat; /*cambia lafoto de la pagina de registro*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.boton{
+    justify-content: center;
+    margin: 100px auto;
+    color: #030303;
+    margin-left: 100px;
+}
+
+
+.containerlog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+   
+    background: url(difu.jpg) no-repeat; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 02px;
+}
+
+
+.container .content{ /*sirve para dividir la pagina y crear otra seccion este llevaba colo fosforecente*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 80px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /*para que el texto del login se vean en columnas o sea hacia abajo*/
+}
+
+.content .logo{
+    font-size: 30px;
+    line-height: 1;
+    color: #fa160e;
+}
+
+.icon{
+    color: #fa160e;
+
+
+
+}
+.text-sci h2 {
+    font-size: 40px;
+    line-height: 1;
+    color: #e4e4e4; /*cambia color a titulo izq*/
+}
+
+.text-sci h2 span{
+    font-size: 25px;
+    color: #e4e4e4 /*cambia color a mensaje de abajo del titutlo izq*/;
+}
+
+.text-sci p {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #e4e4e4; /*cambia color a subtitulo del msj izq*/
+}
+
+.iconos-sociales a i{
+    font-size: 22px;
+    color: #e4e4e4;
+    margin-right: 10px;
+    transition: .5s ease;
+}
+
+.iconos-sociales a:hover i{
+    transform: scale(1.2);
+
+}
+
+.container .logreg-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+}
+
+
+
+
+.logreg-box .form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px) ; /*efecto desombra en venta inicio sesion*/
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #e4e4e4;
+}
+
+.form-box h2{ /*titulo de iniciar sesion*/
+    font-size: 32px;
+    text-align: center;
+    color: #e4e4e4;
+}
+
+.form-box .input-box{ /*separacion de barras de input y linea separadora*/
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-box label{ /**/
+    position: absolute;
+    top: 50%;
+    left: 5%; /*corre a la derecha texto de los label input*/
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+    color: #e4e4e4; /*cambia color a los input label (nombre, apellido etc)*/
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+
+
+.input-box .icon{ /*para editar la posicion de los iconos en barra input*/
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+    color: #e4e4e4;
+}
+
+.form-box .remember-forgot{
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input { 
+    accent-color: #e4e4e4;
+    text-decoration: none;
+}
+
+.remember-forgot label {
+    accent-color: #e4e4e4;
+    text-decoration: none;
+    color: #e4e4e4;/*cambia color a mensaje de abajo*/
+    font-size: 12px;
+    margin: 29px; /*mueve el textodeabajo a la derechao izq*/
+    
+}
+
+.btn{/*btn de registrar*/
+    color: #1D1C1C;
+    display: block;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: -10%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.button
+
+.remember-forgot a{
+    color: #e4e4e4;
+    text-decoration: none;
+    
+
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+   
+}
+
+
+/*PARA EDITAR el carusel*/
+
+.carousel-inner{  /*PARA EDITAR LA POSICION de lo que sostiene las  FOTOS DEL CARUSEL*/
+
+    margin-top: 153px; /*margin top o de arriba mueve o baja los q sostiene las fotos*/
+    position: fixed;
+}
+
+.col-md-3{
+    margin-top: 10px;
+    margin-left: 10%;
+  
+    
+}
+
+.containert{
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.card{
+    margin-top: 70px;  /*margin top o de arriba mueve o baja los q sostiene las fotos*/
+}
+
+.card-text{
+    font-size: small;
+}
+
+.card-text small{
+    color: #e4e4e4;
+    
+
+}
+
+
+footer {
+    
+    
+    padding: 20px 0; /* Espacio interno de 20 píxeles arriba y abajo */
+    text-align: center; /* Texto centrado */
+  }
+
+  
+
+
+

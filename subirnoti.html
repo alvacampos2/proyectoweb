@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <div class="header__superior">
+            <div class="logo">
+                <img src="def cao.png" alt="" >
+            </div>
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Buscar"> <!--barra texto buscar-->
+            <button class="submit"><i class='bx bx-search'></i></button> <!--importe de lupa icon-->
+        </form>
+        </div>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nacionales.html">Nacionales</a></li>
+                        <li><a href="deportes.html">Deportes</a></li>
+                        <li><a href="#">Politica</a></li>
+                        <li><a href="#">Tecnología</a></li>
+                        <li><a href="#">Policiales</a></li>
+                        <li><a href="registrar.html">Regístrate</a></li >
+                    </ul>
+                    
+                </nav>
+            </div>
+        </div>
+    </header>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="Recursos imagenes/logo/logoc.png" alt="" height="90px" width="90px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="subirNoticia.html">Subir Noticia</a>
+                    </li>
+                  
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Seccion
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item " href="#">Politica</a></li>
+                        <li><a class="dropdown-item" href="#">Deporte</a></li>
+                        <li><a class="dropdown-item" href="#">tecnología</a></li>
+                        <li><a class="dropdown-item" href="#">Nacional</a></li>
+                        <li><a class="dropdown-item" href="#">Internacional</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="somos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="contacto.html">Contactanos</a>
+                    </li>
+                   
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="¿Que quieres buscar...?" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <br>
+          <br>
+
+          <h1 class="subirN"> <span class="text-danger">Subir</span> Noticia</h1>
+
+          <div class="row">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ejemplo: juan carreño">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ejemplo: Periodista@caosnews.cl">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Noticia</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Sube imagenes</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-danger">Enviar</button>
+            </div>
+
+          </div>
+
+ 
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+</body>
+</html>
